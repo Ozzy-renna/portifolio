@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Mulish:wght@400;600&display=swap');
+body {
+  font-family: "Mulish", sans-serif ;
+  margin: 0;
+  padding: 0;
+  background: repeating-linear-gradient(#fdfaf6, #fdfaf6 24px, #eaeaea 25px);
+  color: #363636;
+  line-height: 1.5;
+}
+.badge{
+     font-family: 'caveat',cursive;
+        font-size: 1.5rem; 
+}
+header {
+  background: #fdfaf6;
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1, h3{
+     margin: 0;
+      font-size: 2rem; 
+      color: #3b1a1a;
+      font-family: 'Caveat', cursive;
+    }
+    p{
+        margin: 0;
+        color: #703131;
+       font-family:  "Mulish", sans-serif ;
+        font-size: 1.2rem;     
+        line-height: 1.6;
+    }
+  
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #511515;
+  font-weight: bold;
+  font-family: "Mulish", sans-serif;
+}
+nav a:hover { color: #ff7043; }
+
+.note-card {
+  background: linear-gradient(#fff8, #fff8),
+              repeating-linear-gradient(white, white 24px, #6C91BF 25px);
+  border: 1px solid #e6e2d9;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  position: relative;
+}
+.note-card::before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 36px;
+  width: 3px;
+  background: #cb6767;
+  opacity: 0.65;
+}
+
+
+.sticky {
+  display: inline-block;
+  background:rgb(255, 102, 148);
+  padding: 6px 12px;
+  transform: rotate(-1.5deg);
+  box-shadow: 1px 2px 6px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-family: 'Caveat', cursive;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+
+p { margin-bottom: 0.5rem; }
+.lead { font-size: 1.3rem; }
+.soft { color: #4b4b4b; }
+.underline { background: linear-gradient(transparent 65%, #ffb7ef 65%); padding: 0 2px; }
+
+
+ul.chips {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 6px 0;
+  
+}
+ul.chips li {
+  background: #d0f0fd;
+  border: 1px solid #b3e5fc;
+  padding: 5px 10px;
+  border-radius: 999px;
+  transition: transform 0.25s ease, background 0.25s ease;
+  font-family: 'Caveat', cursive;
+}
+ul.chips li:hover { transform: translateY(-2px); background: #bdeeff; }
+
+#skills li{
+   font-size: 1.2rem;
+   font-family: "Mulish", sans-serif;
+}
+.btn.pill {
+  display: inline-block;
+  margin-top: 8px;
+  margin-right: 6px;
+  padding: 8px 14px;
+  background: brown;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(255,112,67,0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  font-family:'Caveat', cursive ;
+}
+.btn.pill:hover {
+  background: #ffbeaa;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(244,81,30,0.28);
+}
+
+
+.project {
+  background: #fff;
+  padding: 12px;
+  margin: 10px 0;
+  border-left: 5px solid #ffaf96;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project:hover {
+  transform: scale(1.03);
+  box-shadow: 3px 3px 12px rgba(0,0,0,0.15);
+}
+.project img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+.page {
+  padding: 20px 8%;
+  min-height: 80vh;
+  border-left: 4px solid #ff99bb;
+
+}
+
+@media (max-width: 768px) {
+  .page { padding: 15px 5%; }
+}
+
+.page.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.page h2 {
+  display: inline-block;
+  background: #e4b1b1;
+  padding: 5px 10px;
+  transform: rotate(-2deg);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+}
+
+/* Contact links */
+#contact a {
+  color: #0077cc;
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+#skills{
+      font-family: 'Caveat', cursive;
+  font-size: 1rem;     
+  line-height: 1.6;
+}
+footer p {
+      text-align: center;
+      padding: 2rem;
+      margin-top: 1rem;
+     font-family: 'Caveat', cursive;
+    }
+.project.wip {
+  position: relative;
+}
+
+.project.wip .overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffcc80;
+  color: #333;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  font-family: 'Caveat', cursive;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
